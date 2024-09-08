@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório do Projeto - Farol com Arduino</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-left: 5px solid #333;
+            overflow-x: auto;
+        }
+        .summary {
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Relatório do Projeto - Farol com Arduino</h1>
+    
+    <div class="summary">
+        <h2>SUMÁRIO</h2>
+        <ul>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#objetivos">Objetivos</a></li>
+            <li><a href="#materiais">Materiais Utilizados</a></li>
+            <li><a href="#diagrama">Diagrama do Circuito</a></li>
+            <li><a href="#codigo">Código Fonte</a></li>
+            <li><a href="#procedimentos">Procedimentos</a></li>
+            <li><a href="#resultados">Resultados</a></li>
+            <li><a href="#discussao">Discussão</a></li>
+            <li><a href="#conclusao">Conclusão</a></li>
+            <li><a href="#referencias">Referências</a></li>
+        </ul>
+    </div>
+
+    <h2 id="introducao">1. INTRODUÇÃO</h2>
+    <p>Este relatório descreve o projeto de um farol utilizando Arduino, com o objetivo de desenvolver habilidades em eletrônica e programação.</p>
+
+    <h2 id="objetivos">2. OBJETIVOS</h2>
+    <p>O principal objetivo é criar um farol que simule as luzes de um sinalizador utilizando LEDs e um microcontrolador Arduino.</p>
+
+    <h2 id="materiais">3. MATERIAIS UTILIZADOS</h2>
+    <ul>
+        <li>Arduino Uno</li>
+        <li>3 LEDs (vermelho, amarelo, verde)</li>
+        <li>3 resistores (220Ω)</li>
+        <li>Protoboard</li>
+        <li>Fios de conexão</li>
+    </ul>
+
+    <h2 id="diagrama">4. DIAGRAMA DO CIRCUITO</h2>
+    <p>Abaixo está o diagrama do circuito projetado no Tinkercad:</p>
+    <img src="img/Diagrama do Circuito.png.png" alt="Diagrama do Circuito" />
+
+    <h2 id="codigo">5. CÓDIGO FONTE</h2>
+    <pre>
+void setup() {
+    pinMode(7, OUTPUT);
+    pinMode(4, OUTPUT);
+    pinMode(2, OUTPUT);
+}
+
+void loop() {
+    digitalWrite(7, HIGH);
+    delay(5000); 
+    digitalWrite(7, LOW);
+
+    digitalWrite(4, HIGH);
+    delay(3000); 
+    digitalWrite(4, LOW);
+
+    digitalWrite(2, HIGH);
+    delay(6000); 
+    digitalWrite(2, LOW);
+}
+    </pre>
+
+    <h2 id="procedimentos">6. PROCEDIMENTOS</h2>
+    <p>Os LEDs foram conectados aos pinos digitais do Arduino conforme o diagrama, e o código foi carregado na placa.</p>
+
+    <h2 id="resultados">7. RESULTADOS</h2>
+    <p>O farol funcionou conforme esperado, alternando as luzes de acordo com o tempo definido no código.</p>
+
+    <h2 id="discussao">8. DISCUSSÃO</h2>
+    <p>O funcionamento do circuito foi satisfatório, e os LEDs apresentaram um brilho adequado.</p>
+
+    <h2 id="conclusao">9. CONCLUSÃO</h2>
+    <p>O projeto foi bem-sucedido, permitindo a prática de conceitos de eletrônica e programação.</p>
+
+    <h2 id="referencias">10. REFERÊNCIAS</h2>
+    <p>Documentação do Arduino e materiais utilizados no projeto.</p>
+
+    <h2>Perguntas</h2>
+    <ol>
+        <li>Qual o valor das resistências utilizadas? <strong>220Ω</strong></li>
+        <li>Qual o valor da corrente elétrica de cada LED? <strong>A corrente típica de um LED é de aproximadamente 20mA.</strong></li>
+    </ol>
+
+    <footer>
+        <p>Relatório elaborado por [Loenardo, Andre, Luciano].</p>
+        <p>Diciplina: Desenvolv/imento de sistemas de informação</p>
+        <p>Laboratório C37. 26/08/2024 </p>
+    </footer>
+</body>
+</html>
+<img src="img/Imagem do projeto.png.png" alt="Imagens do projeto" />
+<img src="img/Imagem do projeto2.png.png"/>
+<img src="img/Imagem do projeto3.png.png"/>
